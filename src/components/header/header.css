@@ -1,0 +1,47 @@
+.header{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-inline: 1.25rem;
+  padding-block: 1.25rem;
+}
+
+.header__logo{
+  font-size: 1.20rem;
+  font-weight: 600;
+}
+
+.nav__ul{
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav__a{
+  color: inherit;
+  font-weight: 500;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.header__icon-btn{
+  display: none;
+}
+
+.header__icon{
+  width: 1.5rem;
+  height: 1.75rem;
+}
+
+
+@media (width < 768px){
+  .nav__ul{
+    display: none;
+  }
+  .header__icon-btn{
+    display: block;
+  }
+  .header{
+    justify-content: space-between;
+  }
+}

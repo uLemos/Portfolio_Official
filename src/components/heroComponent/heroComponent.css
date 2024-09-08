@@ -1,0 +1,78 @@
+.hero{
+  display: flex;
+  align-items: center; /*É por conta disso que o texto está no meio, alinhado com a img*/
+  padding-inline: 1.25rem;
+  padding-top: 1rem;
+  max-width: 1366px;
+  margin-inline: auto;
+}
+
+.hero__left{
+  flex: 2;
+}
+
+
+.hero__right{
+  flex: 1;
+}
+
+.hero__up-text {
+  color: #b1a82e;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.hero__title{
+  font-size: 3rem;
+  line-height: 1.1;
+  font-weight: 500;
+  letter-spacing: -0.05em;
+  margin-top: 0.5rem;
+  max-width: 26ch;
+}
+
+.hero__description{
+  font-size: 0.8rem;
+  opacity: 0.6;
+  font-weight: 400;
+  line-height: calc(1em + 0.5rem);
+  margin-block: 1.5rem;
+  max-width: 95ch;
+}
+
+.hero__btn{
+  font-size: 1rem;
+  background: linear-gradient(to right, #fe3838, #f0ed50);
+  padding: 0.5em 2em;
+  border-radius: 6px;
+  letter-spacing: -0.05em;
+  color: #000;
+}
+
+.hero__img{
+  max-width: 400px;
+}
+
+@media (width < 1024px){
+  .hero{
+    flex-direction: column;
+  }
+  .hero__title{
+    max-width: 20ch;
+  }
+  .hero__description{
+    max-width: 53ch;
+  }
+  .hero__img{
+    width: 100%;
+    max-width: 300px;
+    margin-inline: auto;
+  }
+}
+
+@media (width < 768px){
+  .hero__title{
+    font-size: 2.5rem;
+  }
+}
