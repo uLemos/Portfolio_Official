@@ -8,11 +8,20 @@ const About = () => {
       <section className="lineDiv">
         <div className="lineDiv__div" />
       </section>
-      <h1 className="about__title">Sobre</h1>
       <section className="about">
         <div className="about__leftImages">
           <div className="about__icons">
-            <img src="../../src/assets/icons.png" className="img__icon"/>
+            
+            <div className="about__card">
+              <div className="cardDecoration" />
+              <img src="../../src/assets/perfilF.png" className="card__photo" />
+              <div className="card__titles">
+                <h1 className="card__titlePhoto">Fernando Santos</h1>
+                <span className="card__subTitlePhoto">Full-Stack Developer</span>
+              </div>
+            </div>
+
+            {/* <img src="../../src/assets/icons.png" className="img__icon"/> */}
             <div className="aboutAutoSlide">
               <div className="aboutAutoSlide__items">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angularjs/angularjs-original.svg" />
@@ -42,10 +51,29 @@ const About = () => {
           </div>
         </div>
         <div className="about__rightInfo">
-          <div className="about__card">
-            <div className="cardDecoration" />
-          </div>
-        </div>
+         <span className="aboutRight__subTitle">Soft/Hard - Skills</span>
+         <h1 className="aboutRight__title">Conceitos</h1>
+         <ul className="aboutRight__ul">
+          <li className="ul__li">
+            <a href="" className="li__a">Arquitetura Limpa</a>
+          </li>
+          <li className="ul__li">
+            <a href="" className="li__a">DDD e TDD</a>
+          </li>
+          <li className="ul__li">
+            <a href="" className="li__a">RESTFul API`s</a>
+          </li>
+          <li className="ul__li">
+            <a href="" className="li__a">Mensageria RabbitMq/Kafka</a>
+          </li>
+          <li className="ul__li">
+            <a href="" className="li__a">Docker</a>
+          </li>
+          <li className="ul__li">
+            <a href="" className="li__a">CI/CD</a>
+          </li>
+         </ul>
+        </div> 
       </section>
     </div>
     </>
