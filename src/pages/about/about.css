@@ -115,7 +115,54 @@
 
 .about__rightInfo{
   flex: 1; 
-  border: 1px solid red;
+  max-width: 410px;
+  margin-inline: auto;
+  flex-direction: column;
+  letter-spacing: -0.05em;
+  justify-content: center;
+}
+
+.container_Title{
+  flex: 1;
+  width: 100%;
+  line-height: 2.5rem;
+  padding-bottom: 5rem;
+  padding-inline: 1.5rem;
+}
+
+.aboutRight__subTitle{
+  color: #b1a82e;
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+.aboutRight__title{
+  font-weight: 500;
+  font-size: 3rem;
+}
+
+.aboutRight__ul{
+  flex: 2;
+  width: 100%;
+  padding-inline: 1.5rem;
+}
+
+.ul__li{
+  gap: 1rem;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.ul__svg{
+  width: 30px;
+  color: #f0ed50;
+}
+
+.li__a{
+  color: #f3f3f3;
+  text-decoration: none;
 }
 
 .about__card{
@@ -213,5 +260,6 @@
     bottom: 350px;
   }
 }
+
 
 
