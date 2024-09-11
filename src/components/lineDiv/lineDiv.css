@@ -1,0 +1,16 @@
+.lineDiv{
+  display: flex;
+  max-width: 1280px;
+  margin-inline: auto;
+  padding-block: 6rem;
+  padding-inline: 1.25rem;
+}
+
+.lineDiv__div{
+  width: 100%;
+  opacity: 0.6;
+  height: 0.15rem;
+  max-width: 1366px;
+  border-radius: 0.5rem;
+  background-color: white;
+}

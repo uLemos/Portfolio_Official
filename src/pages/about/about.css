@@ -6,13 +6,13 @@
   display: flex;
   /*align-items: center; /*É por conta disso que o texto está no meio, alinhado com a img*/
   padding-inline: 1.25rem;
-  padding-top: 5rem;
+  /* padding-top: 5rem; */
   max-width: 1280px;
   margin-inline: auto;
 }
 
 .lineDiv{
-  padding-bottom: 6rem;
+  padding-block: 6rem;
 }
 
 .about__title{
@@ -59,6 +59,7 @@
 .about__icons{
   flex: 1;
   display: flex;
+  gap: 2rem;
   align-items: center;
   flex-direction: column;
 } 
@@ -131,7 +132,7 @@
 }
 
 .aboutRight__subTitle{
-  color: #b1a82e;
+  color: #d6d445;
   font-weight: 600;
   font-size: 0.8rem;
   text-transform: uppercase;
@@ -180,12 +181,12 @@
 }
 
 .cardDecoration{
-  width: 10rem;
+  width: 5rem;
   height: 5rem;
-  left: 120px;
+  right: -800px;
   bottom: 380px;
   position: absolute;
-  border-radius: 10px;
+  border-radius: 5rem;
   box-shadow: 0 1rem 1.5rem #17091a;
   background: linear-gradient(150deg, #fe3838, #f0ed50);
 }
@@ -260,6 +261,3 @@
     bottom: 350px;
   }
 }
-
-
-
