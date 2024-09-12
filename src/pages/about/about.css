@@ -116,18 +116,21 @@
 
 .about__rightInfo{
   flex: 1; 
+  display: flex;
   max-width: 410px;
   margin-inline: auto;
   flex-direction: column;
   letter-spacing: -0.05em;
-  justify-content: center;
 }
 
 .container_Title{
   flex: 1;
   width: 100%;
+  display: flex;
+  justify-content: center;
   line-height: 2.5rem;
-  padding-bottom: 5rem;
+  padding-block: 3rem;
+  flex-direction: column;
   padding-inline: 1.5rem;
 }
 

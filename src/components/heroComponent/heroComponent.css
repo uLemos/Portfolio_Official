@@ -55,9 +55,9 @@
 }
 
 @media (width < 1024px){
-  .hero{
+  /* .hero{
     flex-direction: column;
-  }
+  } */
   .hero__title{
     max-width: 20ch;
   }

@@ -57,26 +57,26 @@ const About = () => {
               <span className="aboutRight__subTitle">Soft/Hard - Skills</span>
               <h1 className="aboutRight__title">Conceitos</h1>
             </div>
-          <ul className="aboutRight__ul">
-            <li className="ul__li">
-              <SvgArrow/> <a href="" className="li__a">Arquitetura Limpa;</a>
-            </li>
-            <li className="ul__li">
-              <SvgArrow/> <a href="" className="li__a">DDD e TDD;</a>
-            </li>
-            <li className="ul__li">
-              <SvgArrow/> <a href="" className="li__a">RESTFul API's;</a>
-            </li>
-            <li className="ul__li">
-              <SvgArrow/> <a href="" className="li__a">Mensageria RabbitMq/Kafka;</a>
-            </li>
-            <li className="ul__li">
-              <SvgArrow/> <a href="" className="li__a">Docker;</a>
-            </li>
-            <li className="ul__li">
-              <SvgArrow/> <a href="" className="li__a">CI/CD.</a>
-            </li>
-          </ul>
+            <ul className="aboutRight__ul">
+              <li className="ul__li">
+                <SvgArrow/> <a href="" className="li__a">Arquitetura Limpa;</a>
+              </li>
+              <li className="ul__li">
+                <SvgArrow/> <a href="" className="li__a">DDD e TDD;</a>
+              </li>
+              <li className="ul__li">
+                <SvgArrow/> <a href="" className="li__a">RESTFul API's;</a>
+              </li>
+              <li className="ul__li">
+                <SvgArrow/> <a href="" className="li__a">Mensageria RabbitMq/Kafka;</a>
+              </li>
+              <li className="ul__li">
+                <SvgArrow/> <a href="" className="li__a">Docker;</a>
+              </li>
+              <li className="ul__li">
+                <SvgArrow/> <a href="" className="li__a">CI/CD.</a>
+              </li>
+            </ul>
           </div> 
         </section>
       </div>
