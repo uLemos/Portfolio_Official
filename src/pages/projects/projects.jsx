@@ -17,7 +17,7 @@ const Projects  = () => {
             photoImg={'../../src/assets/pikachu.png'}
             side={2}
           />
-          /*Ao lançar novos componentes, o elemento pai não está deixando de forma alinhada*/
+          {/* /*Ao lançar novos componentes, o elemento pai não está deixando de forma alinhada*/}
         </Section>
       </div>
     </>
