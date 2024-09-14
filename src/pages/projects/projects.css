@@ -1,3 +1,15 @@
 .containerProjects{
-  height: 800px;
+  height: 3000px;
+}
+
+@media (width < 1024px){
+  .containerProjects{
+   height: 4800px;
+  }
+}
+
+@media (width <= 621px){
+  .containerProjects{
+    height: 6700px;
+  }
 }

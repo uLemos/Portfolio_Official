@@ -17,7 +17,51 @@ const Projects  = () => {
             photoImg={'../../src/assets/pikachu.png'}
             side={2}
           />
-          {/* /*Ao lançar novos componentes, o elemento pai não está deixando de forma alinhada*/}
+        </Section>
+        <Section>
+          <ContainerProject 
+            title={'Teste'} 
+            subTitle={'Testezin'}
+            text={'O elemento HTML <template> é um mecanismo para encapsular um conteúdo do lado do cliente que não é renderizado quando a página é carregada, mas que pode ser instanciado posteriormente em tempo de execução usando JavaScript. Pense no template como um fragmento de conteúdo, que é armazenado para um possível uso futuro no documento'} 
+            photoImg={'../../src/assets/pikachu.png'}
+            side={1}
+          />
+        </Section>
+        <Section>
+          <ContainerProject 
+            title={'Teste'} 
+            subTitle={'Testezin'}
+            text={'O elemento HTML <template> é um mecanismo para encapsular um conteúdo do lado do cliente que não é renderizado quando a página é carregada, mas que pode ser instanciado posteriormente em tempo de execução usando JavaScript. Pense no template como um fragmento de conteúdo, que é armazenado para um possível uso futuro no documento'} 
+            photoImg={'../../src/assets/pikachu.png'}
+            side={2}
+          />
+        </Section>
+        <Section>
+          <ContainerProject 
+            title={'Teste'} 
+            subTitle={'Testezin'}
+            text={'O elemento HTML <template> é um mecanismo para encapsular um conteúdo do lado do cliente que não é renderizado quando a página é carregada, mas que pode ser instanciado posteriormente em tempo de execução usando JavaScript. Pense no template como um fragmento de conteúdo, que é armazenado para um possível uso futuro no documento'} 
+            photoImg={'../../src/assets/pikachu.png'}
+            side={1}
+          />
+        </Section>
+        <Section>
+          <ContainerProject 
+            title={'Teste'} 
+            subTitle={'Testezin'}
+            text={'O elemento HTML <template> é um mecanismo para encapsular um conteúdo do lado do cliente que não é renderizado quando a página é carregada, mas que pode ser instanciado posteriormente em tempo de execução usando JavaScript. Pense no template como um fragmento de conteúdo, que é armazenado para um possível uso futuro no documento'} 
+            photoImg={'../../src/assets/pikachu.png'}
+            side={2}
+          />
+        </Section>
+        <Section>
+          <ContainerProject 
+            title={'Teste'} 
+            subTitle={'Testezin'}
+            text={'O elemento HTML <template> é um mecanismo para encapsular um conteúdo do lado do cliente que não é renderizado quando a página é carregada, mas que pode ser instanciado posteriormente em tempo de execução usando JavaScript. Pense no template como um fragmento de conteúdo, que é armazenado para um possível uso futuro no documento'} 
+            photoImg={'../../src/assets/pikachu.png'}
+            side={1}
+          />
         </Section>
       </div>
     </>

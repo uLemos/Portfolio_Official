@@ -1,8 +1,19 @@
+.containerSides{
+  display: flex;
+  width: 100%;
+  max-width: 1280px;
+  align-items: center;
+  margin-inline: auto;
+  padding-block: 1.25rem;
+  justify-content: center;
+  padding-inline: 1.25rem;
+}
+
 .container__apresentation{
   flex: 1;
   display: flex;
-  flex-direction: column;
   max-width: 600px;
+  flex-direction: column;
 }
 
 .apresentation__subTitle{
@@ -58,6 +69,12 @@
   width: 1rem;
 }
 
+.icons__a svg{
+  border-radius: 5rem;
+  background: rgb(65, 12, 65);
+  border: 2px solid rgb(87, 16, 87);
+}
+
 .photo__img{
   flex: 1;
   max-width: 200px;
@@ -67,8 +84,14 @@
   flex: 1;
 }
 
+
 @media (width < 1024px){
   .container__apresentation{
     margin-inline: auto;
+  }
+  .containerSides{
+    margin-inline: auto;
+    flex-direction: column;
+    gap: 3rem;
   }
 }
