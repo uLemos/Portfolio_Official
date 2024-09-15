@@ -42,13 +42,129 @@
 }
 
 .hero__btn{
+  /* color: #000; */
   font-size: 1rem;
-  background: linear-gradient(to right, #fe3838, #f0ed50);
-  padding: 0.5em 2em;
-  border-radius: 6px;
+  /* padding: 0.5em 2em; */
+  /* border-radius: 6px; */
   letter-spacing: -0.05em;
-  color: #000;
+  /* background: linear-gradient(to right, #fe3838, #f0ed50); */
+
+  /* TESTE */
+  transition: 0.5s;/**/
+  color: white;
+  margin: 40px 0;/**/
+  margin-right: 30px;/**/
+  display: inline-block;/**/
+  padding: 15px 30px;/**/
+  overflow: hidden;/**/
+  position: relative;/**/
 }
+
+.hero__btn:hover{
+  background: #f0ed50;
+  color: #000;
+  box-shadow: 
+  0 0 5px #f0ed50
+  0 0 25px #f0ed50
+  0 0 50px #f0ed50
+  0 0 200px #f0ed50
+  ;
+
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #005);
+}
+
+.hero__btn:nth-child(1){
+  filter: hue-rotate(270deg);
+}
+
+.hero__btn:nth-child(2){
+  filter: hue-rotate(110deg);
+}
+
+.hero__btn span{
+  display: block;
+  position: absolute;
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hero__btn span:nth-child(1){
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #f0ed50);
+  animation: btn 1s linear infinite;
+}
+
+@keyframes btn{
+  0%{
+    left: -100%;
+  }
+  50%, 100%{
+    left: 100%;
+  }
+}
+
+.hero__btn span:nth-child(2){
+  top: -100;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #f0ed50);
+  animation: btn2 1s linear infinite;
+  animation-delay: 0.25s;
+}
+
+@keyframes btn2{
+  0%{
+    top: -100%;
+  }
+  50%, 100%{
+    top: 100%;
+  }
+}
+
+.hero__btn span:nth-child(3){
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #f0ed50);
+  animation: btn3 1s linear infinite;
+  animation-delay: .50s;
+}
+
+@keyframes btn3{
+  0%{
+    right: -100%;
+  }
+  50%, 100%{
+    right: 100%;
+  }
+}
+
+.hero__btn span:nth-child(4){
+  bottom: 100;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #f0ed50);
+  animation: btn4 1s linear infinite;
+  animation-delay: .75s;
+}
+
+@keyframes btn4{
+  0%{
+    bottom: -100%;
+  }
+  50%, 100%{
+    bottom: 100%;
+  }
+}
+
 
 .hero__img{
   max-width: 400px;

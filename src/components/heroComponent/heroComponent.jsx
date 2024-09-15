@@ -32,7 +32,13 @@ const HeroComponent = () => {
             com a área de TI se iniciou em 2017, quando me encantei com a programação em meu ensino médio, integrado a 
             redes de computadores. Estou sempre a disposição de descobrir e aprender, buscando mais e mais conhecimento.
           </h2>
-          <button className="hero__btn">Contate Me</button>
+          <button className="hero__btn">
+            <span></span> {/* O span é teste  */}
+            <span></span> {/* O span é teste  */}
+            <span></span> {/* O span é teste  */}
+            <span></span> {/* O span é teste  */}
+            Contate Me
+          </button>
         </div>
         <div className="hero__right"> 
           <img src="../../src/assets/pikachu.png" className="hero__img" />

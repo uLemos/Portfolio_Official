@@ -14,3 +14,15 @@
   border-radius: 0.5rem;
   background-color: white;
 }
+
+@media(width < 1024px){
+  .lineDiv{
+    padding-block: 3rem;
+  }
+}
+
+@media(width < 1284px){
+  .lineDiv{
+    padding-block: 3rem;
+  }
+}

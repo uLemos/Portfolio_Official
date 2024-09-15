@@ -170,6 +170,31 @@
   text-decoration: none;
 }
 
+
+.photo__icons{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icons__ul{
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.icons__a{
+  width: 1rem;
+}
+
+.icons__a svg{
+  border-radius: 5rem;
+  background: rgb(65, 12, 65);
+  box-shadow: 0 0.2rem 0.5rem black;
+  /* border: 2px solid rgb(87, 16, 87); */
+}
+
 .about__card{
   width: 100%;
   display: flex;
@@ -263,5 +288,8 @@
   .cardDecoration{
     left: 100px;
     bottom: 350px;
+  }
+  .photo__icons{
+    padding-block: 3rem;
   }
 }
