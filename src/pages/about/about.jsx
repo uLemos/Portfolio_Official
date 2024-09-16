@@ -14,15 +14,11 @@ const About = () => {
     <>
       <div className="containerAbout">
         <LineDiv />
-        {/* <section className="containerAbout__title"> */}
-          {/* <h1>Sobre</h1> */}
         <LineFromTitle title={'Sobre'}/>
-        {/* </section> */}
         <section className="about">
           <div className="about__leftImages">
             <div className="about__icons">
               <div className="about__card">
-                {/* <div className="cardDecoration" /> */}
                 <img src="../../src/assets/perfilF2.png" className="card__photo" />
                 <div className="card__titles">
                   <h1 className="card__titlePhoto">Fernando Santos</h1>

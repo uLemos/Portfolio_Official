@@ -82,9 +82,9 @@
 
 .aboutAutoSlide__items{
   gap: 1.5rem;
-  position: absolute;
   width: 1800px;
   display: flex;
+  position: absolute;
   align-items: center;
   /* padding-top: 1.75rem; */
   justify-content: center;
@@ -190,9 +190,15 @@
 
 .icons__a svg{
   border-radius: 5rem;
+  transform: translateY(0);
+  transition: transform 0.5s;
   background: rgb(65, 12, 65);
   box-shadow: 0 0.2rem 0.5rem black;
   /* border: 2px solid rgb(87, 16, 87); */
+}
+
+.icons__a svg:hover{
+  transform: translateY(-1rem);
 }
 
 .about__card{

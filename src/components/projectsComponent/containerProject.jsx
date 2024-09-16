@@ -19,6 +19,7 @@ const SideApresentation = ({title, text, listTech = []}) => {
 const SideImg = ({photoImg}) => {
   return <div className="container__photo">
             <img src={photoImg} className="photo__img" />
+            {/* <a href="#">TESTE</a> */}
           </div>
 }
 

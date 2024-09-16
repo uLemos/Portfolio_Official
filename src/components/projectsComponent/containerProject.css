@@ -77,37 +77,52 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
+
+  opacity: 0.8;
+  filter: blur(5px);
+  transform: rotateY(45deg);
+  animation: returnBaseForm 0.5s forwards;
+  transition: opacity 0.5s ease-in-out, filter 0.5s ease-in-out, border-radius 0.5s ease-in-out;
+}
+
+.container__photo:hover{
+  transition: 0.5s;
+  border-radius: 5rem;
+  opacity: 1;
+  filter: blur(0);
+  transform: rotateY(0deg);
+  animation: effectInImg 0.5s forwards;
 }
 
 .photo__img{
   flex: 1;
   border-radius: 1rem;
-  transform: rotateY(45deg);
-  animation: returnBaseForm 0.5s forwards;
-  transition: transform 0.5s, box-shadow 0.5s;
   box-shadow: 0 1rem 5rem rgba(255, 255, 255, 0.219);
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out, border-radius 0.5s ease-in-out;
+  transform: rotateY(30deg) rotateX(10deg) translateY(0) translateZ(0);
 }
 
-.photo__img:hover{
-  transform: rotateY(0deg);
-  animation: effectInImg 0.5s forwards;
+.photo__img:hover {
+  transform: rotateX(15deg) rotateY(-20deg) translateY(-1rem) translateZ(5rem);
 }
 
+
+ /* Os KeyFrames foram substituídos pelos transform - 1000 VEZES MELHOR */
 @keyframes returnBaseForm {
   0% {
-      transform: scale(1.1) translateZ(20px);
+      transform: /*scale(1.1)*/ translateY(-1rem);
   }
   100% {
-      transform: scale(1) translateZ(0);
+      transform: /*scale(1)*/ translateY(0);
   }
 }
 
 @keyframes effectInImg {
   0% {
-      transform: scale(1) translateZ(0);
+      transform: /*scale(1)*/ translateY(0);
   }
   100% {
-      transform: scale(1.1) translateZ(20px);
+      transform: /*scale(1.1)*/ translateY(-1rem);
   }
 }
 
@@ -122,5 +137,8 @@
   }
   .apresentation__ul{
     flex-wrap: wrap;
+  }
+  .container__photo{
+    max-width: 500px;
   }
 }
