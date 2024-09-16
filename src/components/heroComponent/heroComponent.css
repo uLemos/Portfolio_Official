@@ -70,7 +70,7 @@
   0 0 200px #f0ed50
   ;
 
-  -webkit-box-reflect: below 1px linear-gradient(transparent, #005);
+  -webkit-box-reflect: below 5px linear-gradient(transparent, rgba(0, 0, 85, 0.552));
 }
 
 .hero__btn:nth-child(1){
