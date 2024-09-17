@@ -14,8 +14,8 @@ const About = () => {
     <>
       <div className="containerAbout">
         <LineDiv />
-        <LineFromTitle title={'Sobre'}/>
-        <section className="about">
+        <LineFromTitle title={'Sobre'} id={'about'}/>
+        <section className="about" >
           <div className="about__leftImages">
             <div className="about__icons">
               <div className="about__card">

@@ -10,7 +10,7 @@ const Projects  = () => {
     <>
       <div className="containerProjects">
         <LineDiv />
-        <LineFromTitle title={'Projetos'} />
+        <LineFromTitle title={'Projetos'} id={'projects'}/>
         <Section>
           <ContainerProject 
             title={'QUIZ'} 

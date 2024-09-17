@@ -2,11 +2,12 @@ import React from "react";
 import "./heroComponent.css";
 import { Section } from "../UI/style";
 import { TypeAnimation } from 'react-type-animation';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const HeroComponent = () => {
   return (
     <>
-      <Section>
+      <Section id="hero">
       {/* <section className="hero"> */}
         <div className="hero__left">
           <span className="hero__up-text">Full-Stack Developer</span>
@@ -23,7 +24,7 @@ const HeroComponent = () => {
               wrapper="span"
               speed={15}
               repeat={Infinity}
-            >
+              >
               {/* Bem-vindo, aqui jás o futuro melhor dev Full-Stack */}
             </TypeAnimation>
           </h1>
