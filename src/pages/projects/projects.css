@@ -1,15 +1,34 @@
 .containerProjects{
-  height: 3000px;
+  height: 2250px;
+}
+
+@media (width <= 1095px){
+  .containerProjects{
+   height: 2300px;
+  }
 }
 
 @media (width < 1024px){
   .containerProjects{
-   height: 4800px;
+   height: 3500px;
   }
 }
 
 @media (width <= 621px){
   .containerProjects{
-    height: 6700px;
+    height: 3700px;
   }
 }
+
+@media (width <= 400px){
+  .containerProjects{
+    height: 3900px;
+  }
+}
+
+@media (width <= 325px){
+  .containerProjects{
+    height: 4100px;
+  }
+}
+

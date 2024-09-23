@@ -61,8 +61,8 @@
 .apresentation__svg:hover{
   color: #f0e43f;
   /* transform: translateZ(0.5rem); */
-  box-shadow: 0 0 0.5rem #f0e43f;
-  background-color: rgb(118, 34, 151);
+  box-shadow: 0 0 0.5rem #000000;
+  background-color: rgb(212, 139, 2);
 }
 
 /* @keyframes viewEffect {
@@ -174,14 +174,18 @@
     margin-inline: auto;
   }
   .containerSides{
+    gap: 3rem;
     margin-inline: auto;
     flex-direction: column;
-    gap: 3rem;
   }
   .apresentation__ul{
     flex-wrap: wrap;
   }
   .container__photo{
     max-width: 500px;
+  }
+  .container__photo{
+    opacity: 0.9;
+    filter: none;
   }
 }

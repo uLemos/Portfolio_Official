@@ -18,6 +18,7 @@ const Projects  = () => {
             photoImg={'../../src/assets/quiz.png'}
             side={2}
             listTech={['ReactJs', 'Java', 'Vite', 'Postgress']}
+            url={'https://github.com/uLemos/Quiz_Devision'}
           />
         </Section>
         <Section>
@@ -27,6 +28,7 @@ const Projects  = () => {
             photoImg={'../../src/assets/crud.png'}
             side={1}
             listTech={['Angular', 'C#', '.Net', 'ORM Ef Core', 'SQLite']}
+            url={'https://github.com/uLemos/CRUD_ANGULAR'}
           />
         </Section>
         <Section>
@@ -36,6 +38,7 @@ const Projects  = () => {
             photoImg={'../../src/assets/todolist.png'}
             side={2}
             listTech={['ReactJs', 'Vite']}
+            url={'https://github.com/uLemos/To_Do_List_ReactJs'}
           />
         </Section>
         <Section>
@@ -45,6 +48,7 @@ const Projects  = () => {
             photoImg={'../../src/assets/ecommerce.png'}
             side={1}
             listTech={['C#', '.NET6', 'EF CORE 6', 'Postgress']}
+            url={'https://github.com/uLemos/eCommerce_ORM_EF_CORE'}
           />
         </Section>
       </div>

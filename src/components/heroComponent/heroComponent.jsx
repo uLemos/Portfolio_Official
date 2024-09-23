@@ -7,7 +7,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 const HeroComponent = () => {
   return (
     <>
-      <Section id="hero">
+      <Section>
       {/* <section className="hero"> */}
         <div className="hero__left">
           <span className="hero__up-text">Full-Stack Developer</span>
@@ -38,7 +38,7 @@ const HeroComponent = () => {
             <span></span> {/* O span é teste  */}
             <span></span> {/* O span é teste  */}
             <span></span> {/* O span é teste  */}
-            Contate Me
+            Fale Comigo
           </button>
         </div>
         <div className="hero__right"> 
