@@ -50,11 +50,11 @@
   padding: 6px;
   width: 2.5rem;
   border-radius: 2rem;
-  color: rgb(0, 0, 0);
-  background-color: orange;
+  color: #fff;
+  /* background-color: orange; */
   /* transform: translateZ(0); */
   /* animation: viewEffect 1s infinite; */ /*Efeito de chacoalho*/ 
-  box-shadow: 0 0 0.5rem black;
+  /* box-shadow: 0 0 0.5rem black; */
   transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
