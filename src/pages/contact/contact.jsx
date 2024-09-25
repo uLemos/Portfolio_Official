@@ -2,9 +2,22 @@ import React from "react";
 import "./contact.css";
 import LineDiv from "../../components/lineDiv/lineDiv";
 import LineFromTitle from "../../components/UI/LineFromTitle";
+import { useForm } from "react-hook-form";
 
 const Contact = () => {
- 
+  const {
+    register,
+    handleSubmit,
+    watch,
+    formState: { errors },
+  } = useForm();
+
+  const onSubmit = (data) => {
+    alert(JSON.stringify(data));
+  }
+
+  console.log("RENDER");
+
   return (
     <>
       <LineDiv />
@@ -21,8 +34,12 @@ const Contact = () => {
             </div>
 
             <label htmlFor="">Nome</label>
-            <input {...register('name')} placeholder="Informe seu nome" />
-            
+            <input 
+              className={errors?.name && "input-error"}
+              type="text"
+              placeholder="Informe seu nome" />
+              {...register('name', {required: true})} 
+              
             <label {...register('email')} >E-mail</label>
             <input type="email" placeholder="Informe seu e-mail" />
 
