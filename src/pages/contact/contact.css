@@ -123,6 +123,11 @@
   background-color: rgb(0, 110, 255);
 }
 
+.error__message{
+  color: rgb(196, 39, 39);
+  letter-spacing: -0.05rem;
+}
+
 @media(width <= 470px){
   .contact__infosUser{
     margin-inline: auto;
