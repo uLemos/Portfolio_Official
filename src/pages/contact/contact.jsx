@@ -2,18 +2,15 @@ import React, { useState } from "react";
 import "./contact.css";
 import LineDiv from "../../components/lineDiv/lineDiv";
 import LineFromTitle from "../../components/UI/LineFromTitle";
+import { useForm } from "react-hook-form";
 
 const Contact = () => {
-  const [obj, setObj] = useState({
-    nameComplete: "",
-    email: "",
-    tel: "",
-    message: ""
-  });
-  
-  const handleSubmit = (event) => {
-    event.preventDefault()
-    console.log(obj);
+
+  const { register, handleSubmit, formState } = useForm();
+  const { errors } = formState;
+
+  const onSubmit = (e) => {
+    console.log(e);
   }
 
     return (
@@ -21,7 +18,7 @@ const Contact = () => {
       <LineDiv />
       <div className="contact" id="contact">
         <LineFromTitle title={"Contato"}/>
-        <form onSubmit={handleSubmit} className="contact__form">
+        <form onSubmit={handleSubmit(onSubmit)} className="contact__form">
 
           <div className="contact__infosUser">
 
@@ -36,27 +33,44 @@ const Contact = () => {
             <label htmlFor="nameComplete">Nome</label>
             <input 
               type="text"
-              value={obj.nameComplete}
+              id="nameComplete"
+              {...register("nameComplete", { required: {
+                    value: true,
+                    message: "Informe um nome."
+                  }
+                })
+              }
               placeholder="Informe seu nome" 
-              onChange={ data => setObj({ ...obj, nameComplete: data.target.value })}
             />
+            <p className="error__message">{errors.nameComplete?.message}</p>
             
             <label htmlFor="email">E-mail</label>
             <input 
               type="email"
-              value={obj.email}
+              id="email"
+              {...register("email", { required: {
+                    value: true,
+                    message: "Informe um email."
+                  }
+                })
+              }
               placeholder="Informe seu e-mail" 
-              onChange={ data => setObj({ ...obj, email: data.target.value }) }
             />
+            <p className="error__message">{errors.email?.message}</p>
 
             <label htmlFor="tel">Celular</label>
             <input 
               type="text"
-              value={obj.tel}
+              id="tel"
+              {...register("tel", { required: {
+                    value: true,
+                    message: "Informe um telefone."
+                  }
+                })
+              }
               placeholder="(00) 00000-0000" 
-              onChange={ data => setObj({ ...obj, tel: data.target.value }) }
             />
-
+            <p className="error__message">{errors.tel?.message}</p>
           </div>
 
           <div className="contact__message">
@@ -65,10 +79,16 @@ const Contact = () => {
               <label htmlFor="message">Mensagem</label>
               <textarea 
                 type="textarea"
-                value={obj.message}
+                id="message"
+                {...register("message", { required: {
+                      value: true,
+                      message: "Informe uma mensagem."
+                    }
+                  })
+                }
                 placeholder="Informe sua mensagem"
-                onChange={ data => setObj({ ...obj, message: data.target.value }) }
               />
+              <p className="error__message">{errors.message?.message}</p>
             </div>
 
             <div className="contact__btn">
