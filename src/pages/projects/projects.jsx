@@ -1,11 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./projects.css";
 import { Section } from "../../components/UI/style";
 import LineDiv from "../../components/lineDiv/lineDiv";
 import ContainerProject from "../../components/projectsComponent/containerProject";
 import LineFromTitle from "../../components/UI/LineFromTitle";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Projects  = () => {
+
+  useEffect(() => {
+    Aos.init({duration: 2500});
+  }, [])
+
   return (
     <>
       <div className="containerProjects">

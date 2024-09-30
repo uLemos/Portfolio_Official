@@ -1,26 +1,51 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import "./contact.css";
 import LineDiv from "../../components/lineDiv/lineDiv";
 import LineFromTitle from "../../components/UI/LineFromTitle";
 import { useForm } from "react-hook-form";
+import emailjs from '@emailjs/browser';
+import InputMask from "react-input-mask";
+import { Toaster, toast } from 'sonner';
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Contact = () => {
 
+  useEffect(() => {
+    Aos.init({duration: 2500});
+  })
+  
+  const form = useRef();
+  const [toastNotify, setToastNotify] = useState(false);
   const { register, handleSubmit, formState } = useForm();
   const { errors } = formState;
 
-  const onSubmit = (e) => {
-    console.log(e);
-  }
+  let message = toastNotify ? "✔ E-mail senviado com sucesso!" : "😱 Falha no envio do e-mail!";
+
+  const sendEmail = (event) => {
+    console.log(event);
+
+    emailjs.sendForm("service_3ofwvpr", "template_54fxqcv", form.current, { publicKey: "RKbggV4DfDgDsJdgw" })
+    .then((response) => {
+        console.log(`Enviado! O response é: ${response.text} - ${response.status}`)
+        form.current.reset();
+        setToastNotify(true);
+      },
+      (err) => {
+        console.log(`Erro! O response é: ${err.text}`)
+        setToastNotify(false);
+      },
+    );
+  };
 
     return (
     <>
       <LineDiv />
       <div className="contact" id="contact">
         <LineFromTitle title={"Contato"}/>
-        <form onSubmit={handleSubmit(onSubmit)} className="contact__form">
+        <form ref={form} onSubmit={handleSubmit(sendEmail)} className="contact__form">
 
-          <div className="contact__infosUser">
+          <div className="contact__infosUser" data-aos="zoom-in-right" >
 
             <div className="contact__img">
               <div className="contact__line" />
@@ -59,7 +84,8 @@ const Contact = () => {
             <p className="error__message">{errors.email?.message}</p>
 
             <label htmlFor="tel">Celular</label>
-            <input 
+            <InputMask  
+              mask="(99) 99999-9999"
               type="text"
               id="tel"
               {...register("tel", { required: {
@@ -69,7 +95,9 @@ const Contact = () => {
                 })
               }
               placeholder="(00) 00000-0000" 
-            />
+            >
+              {(inputProps) => <input {...inputProps} />}
+            </InputMask>
             <p className="error__message">{errors.tel?.message}</p>
           </div>
 
@@ -92,11 +120,16 @@ const Contact = () => {
             </div>
 
             <div className="contact__btn">
-              <button type="submit" className="message__btn">Enviar e-mail</button>
+              <button type="submit" className="message__btn" onClick={() => 
+                {toastNotify ? 
+                  toast.success(message, { duration: 2500, style: { background: "green", border: "none", color: "white" } }) : 
+                    toast.error(message, { duration: 2500, style: { background: "red", border: "none", color: "white" } })}}
+              > Enviar e-mail</button>
             </div>
-
+            <Toaster position="bottom-left" expand={false} />
           </div>
         </form>
+        
       </div>
     </>
   )

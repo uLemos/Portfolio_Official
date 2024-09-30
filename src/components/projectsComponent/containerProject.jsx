@@ -1,6 +1,8 @@
 import React from "react";
 import "./containerProject.css";
 import { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const ViewProject = ({url}) => {
   return <a href={url} className="apresentation__view">
@@ -11,9 +13,9 @@ const ViewProject = ({url}) => {
           </a>;
 }
 
-const SideApresentation = ({title, text, listTech = [], url}) => {
-  return <div className="container__apresentation">
-            <div className="apresentation__title">
+const SideApresentation = ({title, text, listTech = [], url, sideFade}) => {
+  return <div className="container__apresentation" data-aos={sideFade}>
+            <div className="apresentation__title" >
               <h1 className="title__h1">{title}</h1>
               <ViewProject  url={url}/>
             </div>
@@ -47,6 +49,7 @@ const ContainerProject = ({title, text, photoImg, side, listTech = [], url}) => 
 
   useEffect(() => {
     document.documentElement.style.setProperty('--random-color', getRandomColor());
+    Aos.init({duration: 2500});
   }, []);
 
   return (
@@ -58,6 +61,7 @@ const ContainerProject = ({title, text, photoImg, side, listTech = [], url}) => 
           text={text}
           listTech={listTech}
           url={url}
+          sideFade={"fade-right"}
           /> 
           : <SideImg photoImg={photoImg}/>
         }
@@ -67,6 +71,7 @@ const ContainerProject = ({title, text, photoImg, side, listTech = [], url}) => 
           text={text}
           listTech={listTech}
           url={url}
+          sideFade={"fade-left"}
           /> 
           : <SideImg photoImg={photoImg}/>
         }
