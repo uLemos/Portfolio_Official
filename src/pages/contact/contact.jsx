@@ -28,8 +28,8 @@ const Contact = () => {
     emailjs.sendForm("service_3ofwvpr", "template_54fxqcv", form.current, { publicKey: "RKbggV4DfDgDsJdgw" })
     .then((response) => {
         console.log(`Enviado! O response é: ${response.text} - ${response.status}`)
-        form.current.reset();
         setToastNotify(true);
+        form.current.reset();
       },
       (err) => {
         console.log(`Erro! O response é: ${err.text}`)
