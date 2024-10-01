@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import "./heroComponent.css";
+import pikachu from '../../assets/pikachu.png';
 import { Section } from "../UI/style";
 import { TypeAnimation } from 'react-type-animation';
 import Aos from "aos";
@@ -16,8 +17,8 @@ const HeroComponent = () => {
       <Section>
       {/* <section className="hero"> */}
         <div className="hero__left">
-          <span className="hero__up-text" data-aos="fade-right">Full-Stack Developer</span>
-          <h1 className="hero__title" data-aos="fade-right">
+          <span className="hero__up-text" data-aos="zoom-in-up">Full-Stack Developer</span>
+          <h1 className="hero__title" data-aos="zoom-in-down">
             <TypeAnimation
               sequence={[
                 'Bem-vindo, meu nome é Fernando',
@@ -34,7 +35,7 @@ const HeroComponent = () => {
               {/* Bem-vindo, aqui jás o futuro melhor dev Full-Stack */}
             </TypeAnimation>
           </h1>
-          <h2 className="hero__description" data-aos="fade-left">
+          <h2 className="hero__description" data-aos="zoom-in-down">
             Olá, meu nome é Fernando! Sou formado em Análise e Desenvolvimento de Sistemas. Porém, meu contato inicial 
             com a área de TI se iniciou em 2017, quando me encantei com a programação em meu ensino médio, integrado a 
             redes de computadores. Estou sempre a disposição de descobrir e aprender, buscando mais e mais conhecimento.
@@ -48,7 +49,7 @@ const HeroComponent = () => {
           </a>
         </div>
         <div className="hero__right"> 
-          <img src="../../src/assets/pikachu.png" className="hero__img" />
+          <img src={pikachu} className="hero__img" />
         </div>
       {/* </section> */}
       </Section>

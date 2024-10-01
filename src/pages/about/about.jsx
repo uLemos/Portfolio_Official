@@ -1,4 +1,6 @@
 import React, { useEffect } from "react";
+import pikachu from '../../assets/pikachuOlhandoPraCima.png';
+import perfil from '../../assets/perfilF3.png';
 import "./about.css";
 import LineDiv from "../../components/lineDiv/lineDiv";
 import LineFromTitle from "../../components/UI/LineFromTitle";
@@ -26,7 +28,7 @@ const About = () => {
           <div className="about__leftImages">
             <div className="about__icons">
               <div className="about__card">
-                <img src="../../src/assets/perfilF3.png" className="card__photo" />
+                <img src={perfil} className="card__photo" />
                 <div className="card__titles">
                   <h1 className="card__titlePhoto">Fernando Santos</h1>
                   <span className="card__subTitlePhoto">Full-Stack Developer</span>
@@ -57,15 +59,15 @@ const About = () => {
               </div>
             </div>
             <div className="about__imgPikachu">
-              <img src="../../src/assets/pikachuOlhandoPraCima.png" className="img__Pikachu"/>
+              <img src={pikachu} className="img__Pikachu"/>
             </div>
           </div>
           <div className="about__rightInfo">
-            <div className="container_Title" data-aos="zoom-in-left">
+            <div className="container_Title" data-aos="zoom-in-down">
               <span className="aboutRight__subTitle">Soft/Hard - Skills</span>
               <h1 className="aboutRight__title">Conceitos</h1>
             </div>
-            <ul className="aboutRight__ul" data-aos="zoom-in-left">
+            <ul className="aboutRight__ul" data-aos="zoom-in-up">
               <li className="ul__li">
                 <SvgArrow/> <a href="" className="li__a">Arquitetura Limpa;</a>
               </li>

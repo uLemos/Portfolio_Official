@@ -61,7 +61,7 @@ const ContainerProject = ({title, text, photoImg, side, listTech = [], url}) => 
           text={text}
           listTech={listTech}
           url={url}
-          sideFade={"fade-right"}
+          sideFade={"zoom-in-up"}
           /> 
           : <SideImg photoImg={photoImg}/>
         }
@@ -71,7 +71,7 @@ const ContainerProject = ({title, text, photoImg, side, listTech = [], url}) => 
           text={text}
           listTech={listTech}
           url={url}
-          sideFade={"fade-left"}
+          sideFade={"zoom-in-down"}
           /> 
           : <SideImg photoImg={photoImg}/>
         }

@@ -1,5 +1,6 @@
 import React from "react";
 import "./header.css";
+import letraS from '../../assets/letraS.png';
 import { useState, useEffect } from "react";
 
 const Header = () => {
@@ -42,7 +43,7 @@ const Header = () => {
             <span className="header__logo">Santos</span>  
           )}
           { isSticky && (
-            <span className="header__logo"><img src="../../src/assets/letraS.png" className="header__img"/></span>  
+            <span className="header__logo"><img src={letraS} className="header__img"/></span>  
           )}
           <ul className="nav__ul">
             <li className="nav__li"><a onClick={() => scrollToSection('hero')}  className="nav__a">Início</a></li>
