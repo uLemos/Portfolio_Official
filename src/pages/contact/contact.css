@@ -59,6 +59,7 @@
 }
 
 .contact__infosUser input{
+  width: 100%;
   border: none;
   outline: none;
   padding-inline: 1rem;
@@ -137,6 +138,9 @@
     padding-inline: 0;
     margin-inline: auto;
   }
+  .contact__line{
+    display: none;
+  }
 }
 
 @media(width <= 753px){
@@ -147,13 +151,18 @@
   .contact__message{
     padding-top: 2rem;
   }
+  .contact__img{
+    padding: 0;
+  }
 }
 
 @media(width < 725px){
   .contact{
-    height: 1000px;
+    height: 1100px;
   }
   .contact__btn{
     padding-top: 4rem;
+    margin-inline: auto;
+    justify-content: center;
   }
 }
