@@ -300,3 +300,9 @@
     padding-block: 3rem;
   }
 }
+
+@media (width < 1284px){
+  .aboutRight__title{
+    font-size: 2rem;
+  }
+}

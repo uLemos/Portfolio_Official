@@ -32,3 +32,15 @@
   }
 }
 
+@media (width <= 284px){
+  .containerProjects{
+    height: 4200px;
+  }
+}
+
+@media (width <= 260px){
+  .containerProjects{
+    height: 4600px;
+  }
+}
+
